@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="converter-container">
+                <h1>Currency converter</h1>
+                <!-- From Currency -->
+                <div class="input-container">
+                    <input type="number" value="1" min="1" class="amount"/>
+                    <select class="fromCurrency">
+                    </select>
+                </div>
+
+                <div class="arrow"> → </div>
+
+                <!-- To Currency -->
+                <div class="input-container">
+                    <input type="number" class="convertedAmount" disabled/>
+                    <select class="toCurrency">
+                    </select>
+                </div>
+                <!-- Result show current value of currency to be converted -->
+                <div class="result"></div>
+            </div>
+        </section>
+    </main>
+    <script src="codes.js"></script>
+    <script src="logic.js"></script>
+</body>
+</html>
